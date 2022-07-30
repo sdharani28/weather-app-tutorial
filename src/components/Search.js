@@ -14,7 +14,7 @@ function Search() {
         if(location && location !== ''){
             dispatch(fetchWeatherData());
         }
-    }, [location]);
+    }, [dispatch, location]);
 
     return (
         <div className="search" >
